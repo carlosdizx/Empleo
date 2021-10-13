@@ -14,7 +14,7 @@ class EgresadoController extends Controller
      */
     public function index()
     {
-        //
+        return "xd";
     }
 
     /**
