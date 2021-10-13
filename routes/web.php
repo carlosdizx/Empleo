@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EgresadoController;
+use App\Http\Controllers\EspecialidadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::resource('egresado',EgresadoController::class);
+
+Route::resource('especialidad',EspecialidadController::class);

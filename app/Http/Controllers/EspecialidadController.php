@@ -14,7 +14,7 @@ class EspecialidadController extends Controller
      */
     public function index()
     {
-        //
+        return view("especialidad.index");
     }
 
     /**
