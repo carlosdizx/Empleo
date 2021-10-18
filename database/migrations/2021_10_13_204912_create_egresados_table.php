@@ -15,6 +15,13 @@ class CreateEgresadosTable extends Migration
     {
         Schema::create('egresados', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('edad');
+            $table->string('experiencia');
+            $table->string('correo');
+            $table->string('telefono');
+            $table->string('foto');
+            $table->string('especialidad');
             $table->timestamps();
         });
     }
