@@ -12,7 +12,7 @@
                         <p class="card-text">Telefono: {{$egresado->telefono}}</p>
                         <p class="card-text">Correo: {{$egresado->correo}}</p>
                         <p class="card-text">Especialidad: {{$egresado->especialidad}}</p>
-                        <img class="figure-img img-fluid rounded" src="{{$egresado->foto}}" width="200"/>
+                        <img class="figure-img img-fluid rounded" src="{{$egresado->foto}}" width="200" height="200"/>
                     </div>
                 </div>
             </div>
