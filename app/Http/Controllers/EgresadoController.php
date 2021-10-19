@@ -14,7 +14,8 @@ class EgresadoController extends Controller
      */
     public function index()
     {
-        return view("egresado.index");
+        $datos['egresados'] = Egresado::all();
+        return view("egresado.index",$datos);
     }
 
     /**
