@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../cursos">Cursos</a>
+                        <a class="nav-link" href="../egresado">Egresados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../cursos/create">Crear curso</a>
+                        <a class="nav-link" href="../especialidad">Especialidades</a>
                     </li>
                 </ul>
             </div>
