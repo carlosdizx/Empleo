@@ -3,6 +3,9 @@
 @section('content')
     <div class="row g-2">
         <h1>Listado de especialidades</h1>
+        <a href="" class="btn btn-success">
+            <h4>Insertar nueva especialidad <i class="fa fa-plus"></i></h4>
+        </a>
         <table class="table table-striped">
             <thead>
             <tr>
