@@ -25,7 +25,7 @@ class EspecialidadController extends Controller
      */
     public function create()
     {
-        //
+        return view('especialidad.create');
     }
 
     /**
@@ -36,7 +36,12 @@ class EspecialidadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dataEspecialidad = request() -> except('_token');
+        if ($request->hasFile('foto')){
+            $dataEspecialidad['foto'] = $request->file('foto')->store('uploads','public');
+        }
+        Curso::insert($dataEspecialidad);
+        return redirect('especialidad');
     }
 
     /**
