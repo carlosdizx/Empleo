@@ -40,7 +40,7 @@ class EspecialidadController extends Controller
         if ($request->hasFile('foto')){
             $dataEspecialidad['foto'] = $request->file('foto')->store('uploads','public');
         }
-        Curso::insert($dataEspecialidad);
+        Especialidad::insert($dataEspecialidad);
         return redirect('especialidad');
     }
 
