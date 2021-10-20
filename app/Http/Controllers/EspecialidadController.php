@@ -36,11 +36,9 @@ class EspecialidadController extends Controller
      */
     public function store(Request $request)
     {
-        $dataEspecialidad = request() -> except('_token');
-        if ($request->hasFile('foto')){
-            $dataEspecialidad['foto'] = $request->file('foto')->store('uploads','public');
-        }
-        Especialidad::insert($dataEspecialidad);
+        $especialidad = new Especialidad();
+        $especialidad->nombre = $request->nombre;
+        $especialidad->save();
         return redirect('especialidad');
     }
 
