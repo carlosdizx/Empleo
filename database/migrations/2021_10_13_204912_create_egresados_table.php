@@ -18,7 +18,7 @@ class CreateEgresadosTable extends Migration
             $table->string('nombre');
             $table->string('edad');
             $table->string('experiencia');
-            $table->string('correo');
+            $table->string('correo')->unique();
             $table->string('telefono');
             $table->string('foto');
             $table->string('especialidad');
